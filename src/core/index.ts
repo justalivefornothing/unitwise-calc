@@ -1,0 +1,7 @@
+export { evaluate, evaluateDocument, toResult, type LineResult, type Result } from './evaluate.ts'
+export { tokenize, type Token, type TokenType } from './lexer.ts'
+export { parseLine } from './parser.ts'
+export { UnitwiseError } from './errors.ts'
+export { UNITS, lookupUnit, isUnitName } from './units.ts'
+export { formatNumber, groupDigits, prettyUnitLabel, simplifyDim } from './format.ts'
+export { describeDim, superscript, type Dim } from './dimension.ts'
