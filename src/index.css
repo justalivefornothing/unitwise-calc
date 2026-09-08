@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', Menlo, monospace;
+  --color-page: #f7f7f5;
+  --color-ink: #1f2130;
+  --color-indigo: #3b3f9e;
+  --color-indigo-soft: #6a6ec4;
+  --color-rule: #e2e2dc;
+  --color-muted: #7a7c8a;
+  --color-error: #c0392b;
+  --color-error-soft: #fbe9e6;
+  --color-comment: #8a8d78;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-page);
+  background-image: radial-gradient(circle at 1px 1px, #d6d6cf 1px, transparent 0);
+  background-size: 22px 22px;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
