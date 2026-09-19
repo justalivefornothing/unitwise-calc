@@ -1,10 +1,21 @@
 # Unitwise Calc
 
-A notebook-style calculator language where numbers carry units and convert automatically.
+Notebook-style calculator language where numbers carry physical units. Dimensional analysis catches mistakes; results convert with `in` / `to`.
 
-## Status
+## Features
 
-Core language / unit system scaffolding. See PLAN.md if present.
+- Values are magnitude + unit, not bare floats
+- Dimensional checks on arithmetic (reject `m + s`)
+- Convert on demand: `5 km in miles`, `100 °C to K`
+- Notebook cells for exploratory calculation
+
+## Run
+
+```bash
+npm install
+npm run dev
+npm test
+```
 
 ## License
 
